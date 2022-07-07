@@ -1,33 +1,60 @@
-:root{
-  --background: #EDF2FF;
- --text-color: #FFFFFF;
-  --colorButton: #4263EB;
-  --colorIcons: #000000;
-
-  --text-footer: #00082F;
-  --botton-hover: #364FC7;
-}
-
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
 
-a{
+a {
   text-decoration:none;
-  color: var(--text-color);
+}
+
+:root{
+  --bg-color: #EDF2FF;
+  --text-color: #00082F;
+
+  --colorIcons: #000000;
+
+  --text-footer: #00082F;
+  --primary-color: #4263EB;
+  --primary-botton-hover: #364FC7;  
 }
 
 body {
-  background: var(--background);  
+  background: var(--bg-color);  
+  color: var(--text-color);
   font-family: 'Roboto', sans-serif;
 }
+
+body.light {
+  --bg-color: #EDF2FF;
+  --text-color: #00082F;
+}
+
+body.dark-blue {
+  --bg-color: #00082F;
+  --text-color: #FFFFFF;
+}
+
+body.pink {
+  --bg-color:#FFF0F6 ;
+  --text-color: #1F000B;
+  --primary-color: #D6336C;
+  --primary-botton-hover: #A61E4D;
+}
+
+
+body.dark-pink {
+  --bg-color: #1F000B;
+  --text-color: #FFFFFF;
+  --primary-color: #D6336C;
+  --primary-botton-hover: #A61E4D;
+}
+
 
 .container {
   text-align: center;
   width: 300px;
-  margin: 60px auto;
+  margin: 45px auto;
 }
 img {
   width: 100%;
@@ -37,27 +64,25 @@ img.avatar{
   width: 100px;
   height: 100px;
   padding: 3.7px;
-  border: #4263EB solid 4px ;
+  border: var(--primary-color) solid 4px ;
 }
 
 h1{
   font-size: 32px;
-  color: var(--text-footer);
-  margin-top: 24px
+  margin-top: 24px;
   margin-bottom: 8px;
 }
 
 .username{
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
-  color: var(--text-footer);
   opacity: 0.8;
   font-size:18px;
 }
 
 ul {
   list-style: none;
-  margin: 48px 0;
+  margin: 25px 0;
 }
 
 ul li a {
@@ -65,8 +90,8 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--colorButton);
-  color: var(--text-color);
+  background: var(--primary-color);
+  color: white;
   text-transform: uppercase;
   font-size: 14px;
 
@@ -74,24 +99,25 @@ ul li a {
   border-radius: 6px;
 
   transition:background 400ms; 
+ 
 }
 
 ul li a:hover {
-  background: var(--botton-hover);
+  background: var(--primary-botton-hover);
  
 }
 ul li a:hover .icon {
   fill: var(--colorIcons);
+  transition:fill 400ms;
 }
 
 footer{
   font-weight: 500;
   font-size: 12px;
-  color: var(--text-footer);
   opacity: 0.6;
   transition: opacity 400ms;
 }
 
 footer a {
-  color:var(--text-footer);
+  color: var(--text-color);
 }

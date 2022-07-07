@@ -1,0 +1,35 @@
+#buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  height: 45px;
+}
+
+button {
+  margin: 0.8rem 1rem auto;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+
+}
+
+button:hover {
+  width: 30px;
+  height: 30px;
+}
+
+.btn-light {
+  background: #4263EB;
+}
+
+.btn-dark-blue {
+  background: #00082F;
+
+}
+
+.btn-pink {
+  background: #D6336C;
+}
+
+.btn-dark-pink  {
+  background: #990639;
+}
