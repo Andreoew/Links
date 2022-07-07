@@ -44,29 +44,3 @@ buttons.forEach((btn, classBody) => {
   })
 })
 
-// class DaksThemes {
-//   constructor(btnDarkBlue, btn) {
-//     this.btnDarkBlue = btnDarkBlue;
-//     this.btn = btn;
-//   };
-
-//   addLightBlue() {
-//     classBody.classList.add('btn');
-//   }
-
-//   addDarkBlue() {
-//     if (!this.btnDarkBlue) {
-//       classBody.classList.add('btn-dark-blue');
-//     }
-//   }
-
-//   addPink() {
-//     if (!this.btnPink) {
-//       classBody.classList.add('btn-pink');
-//     }
-
-//   }
-
-// }
-
-// const themes = new DaksThemes(btnDarkBlue, btn);
